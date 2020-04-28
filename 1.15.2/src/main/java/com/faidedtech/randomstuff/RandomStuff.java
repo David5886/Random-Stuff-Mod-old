@@ -1,6 +1,8 @@
 package com.faidedtech.randomstuff;
 
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,16 +12,17 @@ import org.apache.logging.log4j.Logger;
  *
  */
 
-@Mod("randomstuff2")
+@Mod("randomStuff2")
 public final class RandomStuff {
 	
 	public static final String MODID = "randomStuff2";
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
 	
+	
 	/**
 	 * Default Constructor:
 	 */
 	public RandomStuff() {
-		
+		Items.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 }
