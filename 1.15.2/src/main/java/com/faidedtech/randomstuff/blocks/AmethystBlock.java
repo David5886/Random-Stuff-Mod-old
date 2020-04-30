@@ -5,11 +5,15 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 
-public class SilverBlock extends Block {
+/**
+ * Class for the Amethyst block
+ * @author David Adams
+ *
+ */
+public class AmethystBlock extends Block {
 
-	public SilverBlock() {
+	public AmethystBlock() {
 		super(Properties.create(Material.IRON, MaterialColor.IRON).sound(SoundType.METAL).hardnessAndResistance(2.0f));
-		//setRegistryName("silverBlock");
 	}
 
 }

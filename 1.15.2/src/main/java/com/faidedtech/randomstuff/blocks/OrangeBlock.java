@@ -5,11 +5,15 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 
-public class SilverBlock extends Block {
+/**
+ * Class for the Orange block
+ * @author David Adams
+ *
+ */
+public class OrangeBlock extends Block {
 
-	public SilverBlock() {
+	public OrangeBlock() {
 		super(Properties.create(Material.IRON, MaterialColor.IRON).sound(SoundType.METAL).hardnessAndResistance(2.0f));
-		//setRegistryName("silverBlock");
 	}
 
 }

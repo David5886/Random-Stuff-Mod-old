@@ -2,6 +2,8 @@ package com.faidedtech.randomstuff;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,6 +19,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.faidedtech.randomstuff.util.RegistryHandler;
+import com.faidedtech.randomstuff.util.RegistryHandlerBlocks;
 
 import java.util.stream.Collectors;
 
@@ -48,6 +51,7 @@ public class RandomStuff
         
         //Initialize items and blocks into the game
         RegistryHandler.init();
+        RegistryHandlerBlocks.init();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -75,6 +79,14 @@ public class RandomStuff
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
+    
+    public static final ItemGroup TAB = new ItemGroup("randomTab") {
+    	
+    	@Override
+    	public ItemStack createIcon() {
+    		return new ItemStack(RegistryHandler.WATER_SWORD.get());
+    	}
+    };
 
    
     // You can use SubscribeEvent and let the Event Bus discover methods to call

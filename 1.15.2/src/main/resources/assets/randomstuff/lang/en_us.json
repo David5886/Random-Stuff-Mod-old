@@ -1,3 +1,23 @@
 {
-  "item.randomstuff.debug": "Debug Item"
+  "item.randomstuff.debug": "Debug Item",
+  "item.randomstuff.water_sword": "Water Sword",
+  "itemGroup.randomTab": "Random Stuff Mod",
+  "block.randomstuff.silver_block": "Silver Block",
+  "item.randomstuff.silver_ingot": "Silver Ingot",
+  "item.randomstuff.amethyst": "Amethyst",
+  "item.randomstuff.orange_ingot": "Orange Ingot",
+  "item.randomstuff.obsidian_ingot": "Obsidian Ingot",
+  "item.randomstuff.lead_ingot": "Lead Ingot",
+  "item.randomstuff.platinum_ingot": "Platinum Ingot",
+  "item.randomstuff.titanium_ingot": "Titanium Ingot",
+  "item.randomstuff.tin_ingot": "Tin Ingot",
+  "item.randomstuff.nitronium_crystal": "Nitronium Crystal",
+  "item.randomstuff.nitronium_ingot": "Nitronium Ingot",
+  "item.randomstuff.super_diamond_small_chunk": "Super Diamond Small Chunk",
+  "item.randomstuff.super_diamond_chunk": "Super Diamond Chunk",
+  "item.randomstuff.super_diamond": "Super Diamond",
+  "block.randomstuff.amethyst_block": "Amethyst Block",
+  "block.randomstuff.orange_block": "Orange Block",
+  "block.randomstuff.super_diamond_block": "Super Diamond Block",
+  "block.randomstuff.lead_block": "Lead Block"
 }

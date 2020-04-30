@@ -3,20 +3,19 @@ package com.faidedtech.randomstuff.items;
 import com.faidedtech.randomstuff.RandomStuff;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 
 /**
- * Item class for the debug item
+ * Item class for the Platinum Ingot
  * @author David Adams
  *
  */
-public class ItemBase extends Item{
+public class PlatinumIngot extends Item {
 
 	/**
 	 * Default Constructor
 	 * @param properties
 	 */
-	public ItemBase() {
+	public PlatinumIngot() {
 		super(new Item.Properties().group(RandomStuff.TAB));
 	}
 

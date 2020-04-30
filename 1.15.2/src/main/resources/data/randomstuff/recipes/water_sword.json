@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "/"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:water_bucket"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+    	"nbt": "{ench:[{lvl:3s,id:22s}]}",
+        "item": "randomstuff:water_sword",
+        "type": "minecraft:item_nbt",
+        "count": 1
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "randomstuff:super_diamond"
+        }
+    ],
+    "result": {
+        "item": "randomstuff:super_diamond_chunk",
+        "count": 9
+    }
+}
