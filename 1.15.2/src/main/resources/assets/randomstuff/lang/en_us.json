@@ -19,5 +19,7 @@
   "block.randomstuff.amethyst_block": "Amethyst Block",
   "block.randomstuff.orange_block": "Orange Block",
   "block.randomstuff.super_diamond_block": "Super Diamond Block",
-  "block.randomstuff.lead_block": "Lead Block"
+  "block.randomstuff.lead_block": "Lead Block",
+  "block.randomstuff.silver_ore": "Silver Ore",
+  "block.randomstuff.amethyst_ore": "Amethyst Ore"
 }

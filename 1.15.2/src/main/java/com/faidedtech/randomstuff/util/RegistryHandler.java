@@ -76,11 +76,16 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> SUPER_DIAMOND_BLOCK_ITEM = ITEMS.register("super_diamond_block", () -> new BlockItem(RegistryHandlerBlocks.SUPER_DIAMOND_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> LEAD_BLOCK_ITEM = ITEMS.register("lead_block", () -> new BlockItem(RegistryHandlerBlocks.LEAD_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
 	
+	/**
+	 * Create new ore block items
+	 */
+	
+	public static final RegistryObject<Item> SILVER_ORE_ITEM = ITEMS.register("silver_ore", () -> new BlockItem(RegistryHandlerBlocks.SILVER_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> AMETHYST_ORE_ITEM = ITEMS.register("amethyst_ore", () -> new BlockItem(RegistryHandlerBlocks.AMATHYST_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
 	
 	/**
 	 * Create new swords below
 	 */
 	
 	public static final RegistryObject<Item> WATER_SWORD = ITEMS.register("water_sword", () -> new WaterSword(RandomStuffTier.TOOL_WATER , new Item.Properties()));
-
 }

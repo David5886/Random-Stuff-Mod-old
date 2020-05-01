@@ -2,9 +2,11 @@ package com.faidedtech.randomstuff.util;
 
 import com.faidedtech.randomstuff.RandomStuff;
 import com.faidedtech.randomstuff.blocks.AmethystBlock;
+import com.faidedtech.randomstuff.blocks.AmethystOre;
 import com.faidedtech.randomstuff.blocks.LeadBlock;
 import com.faidedtech.randomstuff.blocks.OrangeBlock;
 import com.faidedtech.randomstuff.blocks.SilverBlock;
+import com.faidedtech.randomstuff.blocks.SilverOre;
 import com.faidedtech.randomstuff.blocks.SuperDiamondBlock;
 
 import net.minecraft.block.Block;
@@ -30,10 +32,14 @@ public class RegistryHandlerBlocks {
 	 * Register new blocks below:
 	 */
 	
+	//Blocks
 	public static final RegistryObject<Block> silver_block = BLOCKS.register("silver_block", () -> new SilverBlock());
 	public static final RegistryObject<Block> AMETHYST_BLOCK = BLOCKS.register("amethyst_block", () -> new AmethystBlock());
 	public static final RegistryObject<Block> ORANGE_BLOCK = BLOCKS.register("orange_block", () -> new OrangeBlock());
 	public static final RegistryObject<Block> SUPER_DIAMOND_BLOCK = BLOCKS.register("super_diamond_block", () -> new SuperDiamondBlock());
 	public static final RegistryObject<Block> LEAD_BLOCK = BLOCKS.register("lead_block", () -> new LeadBlock());
 
+	//Ore Blocks
+	public static final RegistryObject<Block> SILVER_ORE = BLOCKS.register("silver_ore", () -> new SilverOre());
+	public static final RegistryObject<Block> AMATHYST_ORE = BLOCKS.register("amethyst_ore", () -> new AmethystOre());
 }

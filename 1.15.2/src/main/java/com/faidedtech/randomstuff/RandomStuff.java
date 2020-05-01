@@ -6,11 +6,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
@@ -40,6 +42,7 @@ public class RandomStuff
     public static final String NAME = "Random Stuff Mod";
     public static final String VERSION = "0.1b";
 
+
     /**
      * Default Constructor for the mod
      */
@@ -54,7 +57,9 @@ public class RandomStuff
         RegistryHandlerBlocks.init();
 
         // Register ourselves for server and other game events we are interested in
+
         MinecraftForge.EVENT_BUS.register(this);
+        
     }
 
     /**
@@ -105,5 +110,9 @@ public class RandomStuff
             // register a new block here
             LOGGER.info("HELLO from Register Block");
         }
+    }
+    @SubscribeEvent
+    public static void loadCompleteEvent(FMLLoadCompleteEvent event) {
+    	
     }
 }
