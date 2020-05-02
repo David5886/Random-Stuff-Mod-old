@@ -75,6 +75,10 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> ORANGE_BLOCK_ITEM = ITEMS.register("orange_block", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> SUPER_DIAMOND_BLOCK_ITEM = ITEMS.register("super_diamond_block", () -> new BlockItem(RegistryHandlerBlocks.SUPER_DIAMOND_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> LEAD_BLOCK_ITEM = ITEMS.register("lead_block", () -> new BlockItem(RegistryHandlerBlocks.LEAD_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> PLATINUM_BLOCK_ITEM = ITEMS.register("platinum_block", () -> new BlockItem(RegistryHandlerBlocks.PLATINUM_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TITANIUM_BLOCK_ITEM = ITEMS.register("titanium_block", () -> new BlockItem(RegistryHandlerBlocks.TITANIUM_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TIN_BLOCK_ITEM = ITEMS.register("tin_block", () -> new BlockItem(RegistryHandlerBlocks.TIN_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> NITRONIUM_BLOCK_ITEM = ITEMS.register("nitronium_block", () -> new BlockItem(RegistryHandlerBlocks.NITRONIUM_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
 	
 	/**
 	 * Create new ore block items
@@ -82,6 +86,12 @@ public class RegistryHandler {
 	
 	public static final RegistryObject<Item> SILVER_ORE_ITEM = ITEMS.register("silver_ore", () -> new BlockItem(RegistryHandlerBlocks.SILVER_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> AMETHYST_ORE_ITEM = ITEMS.register("amethyst_ore", () -> new BlockItem(RegistryHandlerBlocks.AMATHYST_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> ORANGE_ORE_ITEM = ITEMS.register("orange_ore", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> LEAD_ORE_ITEM = ITEMS.register("lead_ore", () -> new BlockItem(RegistryHandlerBlocks.LEAD_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> PLATINUM_ORE_ITEM = ITEMS.register("platinum_ore", () -> new BlockItem(RegistryHandlerBlocks.PLATINUM_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TITANIUM_ORE_ITEM = ITEMS.register("titanium_ore", () -> new BlockItem(RegistryHandlerBlocks.TITANIUM_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TIN_ORE_ITEM = ITEMS.register("tin_ore", () -> new BlockItem(RegistryHandlerBlocks.TIN_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> NITRONIUM_ORE_ITEM = ITEMS.register("nitronium_ore", () -> new BlockItem(RegistryHandlerBlocks.NITRONIUM_ORE.get(), new Item.Properties().group(RandomStuff.TAB)));
 	
 	/**
 	 * Create new swords below

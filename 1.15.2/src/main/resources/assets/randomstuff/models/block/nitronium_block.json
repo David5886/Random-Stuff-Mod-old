@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "side": "randomstuff:blocks/nitronium_block",
+        "down": "randomstuff:blocks/nitronium_block_bottom",
+        "up": "randomstuff:blocks/nitronium_block_top"
+        
+    }
+}
