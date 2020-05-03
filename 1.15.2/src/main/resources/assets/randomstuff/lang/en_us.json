@@ -37,5 +37,10 @@
   "item.randomstuff.emerald_shovel": "Emerald Shovel",
   "item.randomstuff.emerald_axe": "Emerald Axe",
   "item.randomstuff.emerald_hoe": "Emerald Hoe",
-  "item.randomstuff.fire_sword": "Fire Sword"
+  "item.randomstuff.fire_sword": "Fire Sword",
+  "item.randomstuff.amethyst_sword": "Amethyst Sword",
+  "item.randomstuff.amethyst_pick": "Amethyst Pickaxe",
+  "item.randomstuff.amethyst_shovel": "Amethyst Shovel",
+  "item.randomstuff.amethyst_axe": "Amethyst Axe",
+  "item.randomstuff.amethyst_hoe": "Amethyst Hoe"
 }

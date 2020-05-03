@@ -4,6 +4,11 @@ import com.faidedtech.randomstuff.RandomStuff;
 import com.faidedtech.randomstuff.blocks.SilverBlock;
 import com.faidedtech.randomstuff.enums.RandomStuffTier;
 import com.faidedtech.randomstuff.items.Amethyst;
+import com.faidedtech.randomstuff.items.AmethystAxe;
+import com.faidedtech.randomstuff.items.AmethystHoe;
+import com.faidedtech.randomstuff.items.AmethystPick;
+import com.faidedtech.randomstuff.items.AmethystShovel;
+import com.faidedtech.randomstuff.items.AmethystSword;
 import com.faidedtech.randomstuff.items.EmeraldAxe;
 import com.faidedtech.randomstuff.items.EmeraldHoe;
 import com.faidedtech.randomstuff.items.EmeraldPick;
@@ -118,7 +123,11 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> EMERALD_HOE = ITEMS.register("emerald_hoe", () -> new EmeraldHoe(RandomStuffTier.TOOL_EMERALD, 0, new Item.Properties().group(RandomStuff.TAB)));
 
 	//Amethyst tools and sword
-	
+	public static final RegistryObject<Item> AMETHYST_SWORD = ITEMS.register("amethyst_sword", () -> new AmethystSword(RandomStuffTier.TOOL_AMETHYST, 1, -0.5f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> AMETHYST_PICK = ITEMS.register("amethyst_pick", () -> new AmethystPick(RandomStuffTier.TOOL_AMETHYST, 0, -1.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> AMETHYST_AXE = ITEMS.register("amethyst_axe", () -> new AmethystAxe(RandomStuffTier.TOOL_AMETHYST, 1, -1.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> AMETHYST_SHOVEL = ITEMS.register("amethyst_shovel", () -> new AmethystShovel(RandomStuffTier.TOOL_AMETHYST, 0, -1.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> AMETHYST_HOE = ITEMS.register("amethyst_hoe", () -> new AmethystHoe(RandomStuffTier.TOOL_AMETHYST, 0, new Item.Properties().group(RandomStuff.TAB)));
 	
 	//lead tools and sword
 	
