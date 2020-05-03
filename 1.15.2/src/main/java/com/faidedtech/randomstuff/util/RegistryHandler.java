@@ -16,7 +16,12 @@ import com.faidedtech.randomstuff.items.EmeraldShovel;
 import com.faidedtech.randomstuff.items.EmeraldSword;
 import com.faidedtech.randomstuff.items.FireSword;
 import com.faidedtech.randomstuff.items.ItemBase;
+import com.faidedtech.randomstuff.items.LeadAxe;
+import com.faidedtech.randomstuff.items.LeadHoe;
 import com.faidedtech.randomstuff.items.LeadIngot;
+import com.faidedtech.randomstuff.items.LeadPick;
+import com.faidedtech.randomstuff.items.LeadShovel;
+import com.faidedtech.randomstuff.items.LeadSword;
 import com.faidedtech.randomstuff.items.NitroniumCrystal;
 import com.faidedtech.randomstuff.items.NitroniumIngot;
 import com.faidedtech.randomstuff.items.ObsidianIngot;
@@ -130,6 +135,11 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> AMETHYST_HOE = ITEMS.register("amethyst_hoe", () -> new AmethystHoe(RandomStuffTier.TOOL_AMETHYST, 0, new Item.Properties().group(RandomStuff.TAB)));
 	
 	//lead tools and sword
+	public static final RegistryObject<Item> LEAD_SWORD = ITEMS.register("lead_sword", () -> new LeadSword(RandomStuffTier.TOOL_LEAD, -1, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> LEAD_PICK = ITEMS.register("lead_pick", () -> new LeadPick(RandomStuffTier.TOOL_LEAD, -2, -3.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> LEAD_AXE = ITEMS.register("lead_axe", () -> new LeadAxe(RandomStuffTier.TOOL_LEAD, -2, -3.5f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> LEAD_SHOVEL = ITEMS.register("lead_shovel", () -> new LeadShovel(RandomStuffTier.TOOL_LEAD, -2, -3.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> LEADT_HOE = ITEMS.register("lead_hoe", () -> new LeadHoe(RandomStuffTier.TOOL_LEAD, 0, new Item.Properties().group(RandomStuff.TAB)));
 	
 	
 	//nitronium tools and sword

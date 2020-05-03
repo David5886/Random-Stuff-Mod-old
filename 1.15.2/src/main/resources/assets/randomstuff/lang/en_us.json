@@ -42,5 +42,10 @@
   "item.randomstuff.amethyst_pick": "Amethyst Pickaxe",
   "item.randomstuff.amethyst_shovel": "Amethyst Shovel",
   "item.randomstuff.amethyst_axe": "Amethyst Axe",
-  "item.randomstuff.amethyst_hoe": "Amethyst Hoe"
+  "item.randomstuff.amethyst_hoe": "Amethyst Hoe",
+  "item.randomstuff.lead_sword": "Lead Sword",
+  "item.randomstuff.lead_pick": "Lead Pickaxe",
+  "item.randomstuff.lead_shovel": "Lead Shovel",
+  "item.randomstuff.lead_axe": "Lead Axe",
+  "item.randomstuff.lead_hoe": "Lead Hoe"
 }
