@@ -31,5 +31,10 @@
   "block.randomstuff.platinum_block": "Platinum Block",
   "block.randomstuff.titanium_block": "Titanium Block",
   "block.randomstuff.tin_block": "Tin Block",
-  "block.randomstuff.nitronium_block": "Nitronium Block"
+  "block.randomstuff.nitronium_block": "Nitronium Block",
+  "item.randomstuff.emerald_sword": "Emerald Sword",
+  "item.randomstuff.emerald_pick": "Emerald Pickaxe",
+  "item.randomstuff.emerald_shovel": "Emerald Shovel",
+  "item.randomstuff.emerald_axe": "Emerald Axe",
+  "item.randomstuff.emerald_hoe": "Emerald Hoe"
 }

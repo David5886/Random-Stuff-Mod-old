@@ -4,6 +4,11 @@ import com.faidedtech.randomstuff.RandomStuff;
 import com.faidedtech.randomstuff.blocks.SilverBlock;
 import com.faidedtech.randomstuff.enums.RandomStuffTier;
 import com.faidedtech.randomstuff.items.Amethyst;
+import com.faidedtech.randomstuff.items.EmeraldAxe;
+import com.faidedtech.randomstuff.items.EmeraldHoe;
+import com.faidedtech.randomstuff.items.EmeraldPick;
+import com.faidedtech.randomstuff.items.EmeraldShovel;
+import com.faidedtech.randomstuff.items.EmeraldSword;
 import com.faidedtech.randomstuff.items.ItemBase;
 import com.faidedtech.randomstuff.items.LeadIngot;
 import com.faidedtech.randomstuff.items.NitroniumCrystal;
@@ -98,4 +103,34 @@ public class RegistryHandler {
 	 */
 	
 	public static final RegistryObject<Item> WATER_SWORD = ITEMS.register("water_sword", () -> new WaterSword(RandomStuffTier.TOOL_WATER , new Item.Properties()));
+	
+	
+	/**
+	 * Create new tools below
+	 */
+	
+	public static final RegistryObject<Item> EMERALD_SWORD = ITEMS.register("emerald_sword", () -> new EmeraldSword(RandomStuffTier.TOOL_EMERALD, 3, -1.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> EMERALD_PICK = ITEMS.register("emerald_pick", () -> new EmeraldPick(RandomStuffTier.TOOL_EMERALD, 1, -1.5f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> EMERALD_AXE = ITEMS.register("emerald_axe", () -> new EmeraldAxe(RandomStuffTier.TOOL_EMERALD, 2, -1.2f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> EMERALD_SHOVEL = ITEMS.register("emerald_shovel", () -> new EmeraldShovel(RandomStuffTier.TOOL_EMERALD, 0, -1.3f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> EMERALD_HOE = ITEMS.register("emerald_hoe", () -> new EmeraldHoe(RandomStuffTier.TOOL_EMERALD, 0, new Item.Properties().group(RandomStuff.TAB)));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
