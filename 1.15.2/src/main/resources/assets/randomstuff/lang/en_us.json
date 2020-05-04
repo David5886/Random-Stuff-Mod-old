@@ -18,7 +18,7 @@
   "item.randomstuff.super_diamond": "Condensed Diamond",
   "block.randomstuff.amethyst_block": "Amethyst Block",
   "block.randomstuff.orange_block": "Orange Block",
-  "block.randomstuff.super_diamond_block": "Super Diamond Block",
+  "block.randomstuff.super_diamond_block": "Condensed Diamond Block",
   "block.randomstuff.lead_block": "Lead Block",
   "block.randomstuff.silver_ore": "Silver Ore",
   "block.randomstuff.amethyst_ore": "Amethyst Ore",
@@ -47,5 +47,15 @@
   "item.randomstuff.lead_pick": "Lead Pickaxe",
   "item.randomstuff.lead_shovel": "Lead Shovel",
   "item.randomstuff.lead_axe": "Lead Axe",
-  "item.randomstuff.lead_hoe": "Lead Hoe"
+  "item.randomstuff.lead_hoe": "Lead Hoe",
+  "item.randomstuff.nitronium_sword": "Nitronium Sword",
+  "item.randomstuff.nitronium_pick": "Nitronium Pickaxe",
+  "item.randomstuff.nitronium_axe": "Nitronium Axe",
+  "item.randomstuff.nitronium_shovel": "Nitronium Shovel",
+  "item.randomstuff.nitronium_hoe": "Nitronium Hoe",
+  "item.randomstuff.obsidian_sword": "Obsidian Sword",
+  "item.randomstuff.obsidian_pick": "Obsidian Pickaxe",
+  "item.randomstuff.obsidian_axe": "Obsidian Axe",
+  "item.randomstuff.obsidian_shovel": "Obsidian Shovel",
+  "item.randomstuff.obsidian_hoe": "Obsidian Hoe"
 }

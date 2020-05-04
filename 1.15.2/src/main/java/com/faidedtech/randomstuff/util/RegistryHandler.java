@@ -22,11 +22,21 @@ import com.faidedtech.randomstuff.items.LeadIngot;
 import com.faidedtech.randomstuff.items.LeadPick;
 import com.faidedtech.randomstuff.items.LeadShovel;
 import com.faidedtech.randomstuff.items.LeadSword;
+import com.faidedtech.randomstuff.items.NitroniumAxe;
 import com.faidedtech.randomstuff.items.NitroniumCrystal;
+import com.faidedtech.randomstuff.items.NitroniumHoe;
 import com.faidedtech.randomstuff.items.NitroniumIngot;
+import com.faidedtech.randomstuff.items.NitroniumPick;
+import com.faidedtech.randomstuff.items.NitroniumShovel;
+import com.faidedtech.randomstuff.items.NitroniumSword;
 import com.faidedtech.randomstuff.items.ObsidianIngot;
 import com.faidedtech.randomstuff.items.OrangeIngot;
 import com.faidedtech.randomstuff.items.PlatinumIngot;
+import com.faidedtech.randomstuff.items.RandomAxe;
+import com.faidedtech.randomstuff.items.RandomHoe;
+import com.faidedtech.randomstuff.items.RandomPick;
+import com.faidedtech.randomstuff.items.RandomShovel;
+import com.faidedtech.randomstuff.items.RandomSword;
 import com.faidedtech.randomstuff.items.SilverIngot;
 import com.faidedtech.randomstuff.items.SuperDiamond;
 import com.faidedtech.randomstuff.items.SuperDiamondChunk;
@@ -139,14 +149,22 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> LEAD_PICK = ITEMS.register("lead_pick", () -> new LeadPick(RandomStuffTier.TOOL_LEAD, -2, -3.0f, new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> LEAD_AXE = ITEMS.register("lead_axe", () -> new LeadAxe(RandomStuffTier.TOOL_LEAD, -2, -3.5f, new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> LEAD_SHOVEL = ITEMS.register("lead_shovel", () -> new LeadShovel(RandomStuffTier.TOOL_LEAD, -2, -3.0f, new Item.Properties().group(RandomStuff.TAB)));
-	public static final RegistryObject<Item> LEADT_HOE = ITEMS.register("lead_hoe", () -> new LeadHoe(RandomStuffTier.TOOL_LEAD, 0, new Item.Properties().group(RandomStuff.TAB)));
-	
+	public static final RegistryObject<Item> LEAD_HOE = ITEMS.register("lead_hoe", () -> new LeadHoe(RandomStuffTier.TOOL_LEAD, 0, new Item.Properties().group(RandomStuff.TAB)));
 	
 	//nitronium tools and sword
-	
-	
+	public static final RegistryObject<Item> NITRONIUM_SWORD = ITEMS.register("nitronium_sword", () -> new NitroniumSword(RandomStuffTier.TOOL_NITRONIUM, 6, 2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> NITRONIUM_PICK = ITEMS.register("nitronium_pick", () -> new NitroniumPick(RandomStuffTier.TOOL_NITRONIUM, 4, 2.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> NITRONIUM_AXE = ITEMS.register("nitronium_axe", () -> new NitroniumAxe(RandomStuffTier.TOOL_NITRONIUM, 5, 2.1f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> NITRONIUM_SHOVEL = ITEMS.register("nitronium_shovel", () -> new NitroniumShovel(RandomStuffTier.TOOL_NITRONIUM, 3, 2.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> NITRONIUM_HOE = ITEMS.register("nitronium_hoe", () -> new NitroniumHoe(RandomStuffTier.TOOL_NITRONIUM, 0, new Item.Properties().group(RandomStuff.TAB)));
+
 	//obsidian tools and sword
-	
+	public static final RegistryObject<Item> OBSIDIAN_SWORD = ITEMS.register("obsidian_sword", () -> new RandomSword(RandomStuffTier.TOOL_OBSIDIAN, 2, -2.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> OBSIDIAN_PICK = ITEMS.register("obsidian_pick", () -> new RandomPick(RandomStuffTier.TOOL_OBSIDIAN, 1, -2.2f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> OBSIDIAN_AXE = ITEMS.register("obsidian_axe", () -> new RandomAxe(RandomStuffTier.TOOL_OBSIDIAN, 1, -2.1f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> OBSIDIAN_SHOVEL = ITEMS.register("obsidian_shovel", () -> new RandomShovel(RandomStuffTier.TOOL_OBSIDIAN, 1, -2.0f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> OBSIDIAN_HOE = ITEMS.register("obsidian_hoe", () -> new RandomHoe(RandomStuffTier.TOOL_OBSIDIAN, 0, new Item.Properties().group(RandomStuff.TAB)));
+
 	
 	//orange tools and sword
 	
@@ -166,20 +184,6 @@ public class RegistryHandler {
 	//tin tools and sword
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
