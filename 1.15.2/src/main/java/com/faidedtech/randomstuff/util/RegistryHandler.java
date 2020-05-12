@@ -128,6 +128,7 @@ public class RegistryHandler {
 	
 	/**
 	 * Create new tools below
+	 * NOTE: the X.Xf is attack speed!
 	 */
 	
 	//Emerald tools and sword below
@@ -167,22 +168,52 @@ public class RegistryHandler {
 
 	
 	//orange tools and sword
-	
+	public static final RegistryObject<Item> ORANGE_SWORD = ITEMS.register("orange_sword", () -> new RandomSword(RandomStuffTier.TOOL_ORANGE, 0, -2.2f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> ORANGE_PICK = ITEMS.register("orange_pick", () -> new RandomPick(RandomStuffTier.TOOL_ORANGE, -1, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> ORANGE_AXE = ITEMS.register("orange_axe", () -> new RandomAxe(RandomStuffTier.TOOL_ORANGE, -1, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> ORANGE_SHOVEL = ITEMS.register("orange_shovel", () -> new RandomShovel(RandomStuffTier.TOOL_ORANGE, -1, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> ORANGE_HOE = ITEMS.register("orange_hoe", () -> new RandomHoe(RandomStuffTier.TOOL_ORANGE, -2, new Item.Properties().group(RandomStuff.TAB)));
+
 	
 	//platinum tools and sword
-	
+	public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register("platinum_sword", () -> new RandomSword(RandomStuffTier.TOOL_PLATINUM, 3, 0.5f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> PLATINUM_PICK = ITEMS.register("platinum_pick", () -> new RandomPick(RandomStuffTier.TOOL_PLATINUM, 2, 0.2f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> PLATINUM_AXE = ITEMS.register("platinum_axe", () -> new RandomAxe(RandomStuffTier.TOOL_PLATINUM, 2, 0.5f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel", () -> new RandomShovel(RandomStuffTier.TOOL_PLATINUM, 1, 0.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> PLATINUM_HOE = ITEMS.register("platinum_hoe", () -> new RandomHoe(RandomStuffTier.TOOL_PLATINUM, 1, new Item.Properties().group(RandomStuff.TAB)));
+
 	
 	//condensed diamond tools and sword
-	
+	public static final RegistryObject<Item> CONDENSED_SWORD = ITEMS.register("condensed_sword", () -> new RandomSword(RandomStuffTier.TOOL_SUPER, 20, 6.5f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> CONDENSED_PICK = ITEMS.register("condensed_pick", () -> new RandomPick(RandomStuffTier.TOOL_SUPER, 20, 6.2f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> CONDENSED_AXE = ITEMS.register("condensed_axe", () -> new RandomAxe(RandomStuffTier.TOOL_SUPER, 20, 6.5f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> CONDENSED_SHOVEL = ITEMS.register("condensed_shovel", () -> new RandomShovel(RandomStuffTier.TOOL_SUPER, 20, 6.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> CONDENSED_HOE = ITEMS.register("condensed_hoe", () -> new RandomHoe(RandomStuffTier.TOOL_SUPER, 5, new Item.Properties().group(RandomStuff.TAB)));
+
 	
 	//silver tools and sword
+	public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword", () -> new RandomSword(RandomStuffTier.TOOL_SILVER, 0, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> SILVER_PICK = ITEMS.register("silver_pick", () -> new RandomPick(RandomStuffTier.TOOL_SILVER, 0, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> SILVER_AXE = ITEMS.register("silver_axe", () -> new RandomAxe(RandomStuffTier.TOOL_SILVER, 0, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> SILVER_SHOVEL = ITEMS.register("silver_shovel", () -> new RandomShovel(RandomStuffTier.TOOL_SILVER, 0, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> SILVER_HOE = ITEMS.register("silver_hoe", () -> new RandomHoe(RandomStuffTier.TOOL_SILVER, 1, new Item.Properties().group(RandomStuff.TAB)));
 	
 	
 	//titanium tools and sword
-	
+	public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword", () -> new RandomSword(RandomStuffTier.TOOL_TITANIUM, 5, 2.8f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TITANIUM_PICK = ITEMS.register("titanium_pick", () -> new RandomPick(RandomStuffTier.TOOL_TITANIUM, 3, 2.8f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TITANIUM_AXE = ITEMS.register("titanium_axe", () -> new RandomAxe(RandomStuffTier.TOOL_TITANIUM, 4, 2.8f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TITANIUM_SHOVEL = ITEMS.register("titanium_shovel", () -> new RandomShovel(RandomStuffTier.TOOL_TITANIUM, 3, 2.8f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TITANIUM_HOE = ITEMS.register("titanium_hoe", () -> new RandomHoe(RandomStuffTier.TOOL_TITANIUM, 1, new Item.Properties().group(RandomStuff.TAB)));
+
 	
 	//tin tools and sword
-	
+	public static final RegistryObject<Item> TIN_SWORD = ITEMS.register("tin_sword", () -> new RandomSword(RandomStuffTier.TOOL_TIN, -3, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TIN_PICK = ITEMS.register("tin_pick", () -> new RandomPick(RandomStuffTier.TOOL_TIN, -4, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TIN_AXE = ITEMS.register("tin_axe", () -> new RandomAxe(RandomStuffTier.TOOL_TIN, -4, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TIN_SHOVEL = ITEMS.register("tin_shovel", () -> new RandomShovel(RandomStuffTier.TOOL_TIN, -3, -2.4f, new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TIN_HOE = ITEMS.register("tin_hoe", () -> new RandomHoe(RandomStuffTier.TOOL_TIN, 1, new Item.Properties().group(RandomStuff.TAB)));
+
 }
 
 
