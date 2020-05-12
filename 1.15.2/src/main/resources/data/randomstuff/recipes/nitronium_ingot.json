@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "randomstuff:nitronium_shard"
+    },
+    "result": "randomstuff:nitronium_ingot",
+    "experience": 4,
+    "cookingtime": 200
+}

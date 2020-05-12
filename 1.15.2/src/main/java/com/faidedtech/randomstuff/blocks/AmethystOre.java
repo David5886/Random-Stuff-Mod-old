@@ -14,6 +14,7 @@ public class AmethystOre extends Block {
 
 	public AmethystOre() {
 		super(Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE).hardnessAndResistance(1.5f));
+
 	}
 
 }

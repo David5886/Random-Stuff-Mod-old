@@ -13,7 +13,7 @@ import net.minecraft.block.material.MaterialColor;
 public class TitaniumBlock extends Block {
 
 	public TitaniumBlock() {
-		super(Properties.create(Material.IRON, MaterialColor.IRON).sound(SoundType.METAL).hardnessAndResistance(2.0f));
+		super(Properties.create(Material.IRON, MaterialColor.IRON).sound(SoundType.METAL).hardnessAndResistance(2.8f));
 		//setRegistryName("silverBlock");
 	}
 

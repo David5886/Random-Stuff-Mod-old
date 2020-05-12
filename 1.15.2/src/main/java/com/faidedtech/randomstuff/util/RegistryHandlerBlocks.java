@@ -62,4 +62,5 @@ public class RegistryHandlerBlocks {
 	public static final RegistryObject<Block> TITANIUM_ORE = BLOCKS.register("titanium_ore", () -> new TitaniumOre());
 	public static final RegistryObject<Block> TIN_ORE = BLOCKS.register("tin_ore", () -> new TinOre());
 	public static final RegistryObject<Block> NITRONIUM_ORE = BLOCKS.register("nitronium_ore", () -> new NitroniumOre());
+	
 }

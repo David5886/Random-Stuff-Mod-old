@@ -13,7 +13,7 @@ import net.minecraft.block.material.MaterialColor;
 public class TitaniumOre extends Block {
 
 	public TitaniumOre() {
-		super(Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE).hardnessAndResistance(1.5f));
+		super(Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE).hardnessAndResistance(3.0f));
 	}
 
 }

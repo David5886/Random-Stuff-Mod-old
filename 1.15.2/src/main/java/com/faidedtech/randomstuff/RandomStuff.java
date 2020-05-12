@@ -22,6 +22,15 @@ import org.apache.logging.log4j.Logger;
 
 import com.faidedtech.randomstuff.util.RegistryHandler;
 import com.faidedtech.randomstuff.util.RegistryHandlerBlocks;
+import com.faidedtech.randomstuff.world.gen.AmethystOreGen;
+import com.faidedtech.randomstuff.world.gen.LeadOreGen;
+import com.faidedtech.randomstuff.world.gen.NitroniumOreGen;
+import com.faidedtech.randomstuff.world.gen.OrangeOreGen;
+import com.faidedtech.randomstuff.world.gen.PlatinumOreGen;
+import com.faidedtech.randomstuff.world.gen.RandomOreGen;
+import com.faidedtech.randomstuff.world.gen.SilverOreGen;
+import com.faidedtech.randomstuff.world.gen.TinOreGen;
+import com.faidedtech.randomstuff.world.gen.TitaniumOreGen;
 
 import java.util.stream.Collectors;
 
@@ -34,6 +43,7 @@ import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("randomstuff")
+@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class RandomStuff
 {
     // Directly reference a log4j logger.
@@ -100,10 +110,23 @@ public class RandomStuff
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
+    
+    @SubscribeEvent
+    public static void loadCompleteEvent(FMLLoadCompleteEvent event) {
+    	//RandomOreGen.generateOre();
+    	TinOreGen.generateOre();
+    	LeadOreGen.generateOre();
+    	SilverOreGen.generateOre();
+    	AmethystOreGen.generateOre();
+    	OrangeOreGen.generateOre();
+    	PlatinumOreGen.generateOre();
+    	TitaniumOreGen.generateOre();
+    	NitroniumOreGen.generateOre();
+    }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)
-    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
+    
     public static class RegistryEvents {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
@@ -111,8 +134,5 @@ public class RandomStuff
             LOGGER.info("HELLO from Register Block");
         }
     }
-    @SubscribeEvent
-    public static void loadCompleteEvent(FMLLoadCompleteEvent event) {
-    	
-    }
+    
 }

@@ -13,7 +13,7 @@ import net.minecraft.block.material.MaterialColor;
 public class NitroniumOre extends Block {
 
 	public NitroniumOre() {
-		super(Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE).hardnessAndResistance(1.5f));
+		super(Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE).hardnessAndResistance(3.0f));
 	}
 
 }
