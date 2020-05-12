@@ -9,6 +9,7 @@ import com.faidedtech.randomstuff.items.AmethystHoe;
 import com.faidedtech.randomstuff.items.AmethystPick;
 import com.faidedtech.randomstuff.items.AmethystShovel;
 import com.faidedtech.randomstuff.items.AmethystSword;
+import com.faidedtech.randomstuff.items.DefaultItem;
 import com.faidedtech.randomstuff.items.EmeraldAxe;
 import com.faidedtech.randomstuff.items.EmeraldHoe;
 import com.faidedtech.randomstuff.items.EmeraldPick;
@@ -48,6 +49,7 @@ import com.faidedtech.randomstuff.items.WaterSword;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Food;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Properties;
@@ -72,6 +74,10 @@ public class RegistryHandler {
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		//entities.register and so on and so fourth
 	}
+	/**
+	 * Create food below. Create like a normal item. But add the .food to properties
+	 */
+	//public static final RegistryObject<Item> TEST_FOOD = ITEMS.register("test_food", () -> new DefaultItem(new Item.Properties().food(new Food.Builder().hunger(6).saturation(1.2f).build())));
 	
 	
 	/**
@@ -91,6 +97,7 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> SUPER_DIAMOND = ITEMS.register("super_diamond", SuperDiamond::new);
 	public static final RegistryObject<Item> SUPER_DIAMOND_CHUNK = ITEMS.register("super_diamond_chunk", SuperDiamondChunk::new);
 	public static final RegistryObject<Item> SUPER_DIAMOND_SMALL_CHUNK = ITEMS.register("super_diamond_small_chunk", SuperDiamondSmallChunk::new);
+	
 	
 	
 	/**
