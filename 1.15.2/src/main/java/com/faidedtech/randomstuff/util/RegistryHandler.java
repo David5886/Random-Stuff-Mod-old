@@ -113,6 +113,13 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> TIN_BLOCK_ITEM = ITEMS.register("tin_block", () -> new BlockItem(RegistryHandlerBlocks.TIN_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> NITRONIUM_BLOCK_ITEM = ITEMS.register("nitronium_block", () -> new BlockItem(RegistryHandlerBlocks.NITRONIUM_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
 	
+	
+	/**
+	 * Grass
+	 */
+	
+	public static final RegistryObject<Item> ORANGE_GRASS_ITEM = ITEMS.register("orange_grass", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_GRASS.get(), new Item.Properties().group(RandomStuff.TAB)));
+
 	/**
 	 * Create new ore block items
 	 */

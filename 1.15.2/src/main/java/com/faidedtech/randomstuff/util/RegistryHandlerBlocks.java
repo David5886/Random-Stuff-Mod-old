@@ -8,6 +8,7 @@ import com.faidedtech.randomstuff.blocks.LeadOre;
 import com.faidedtech.randomstuff.blocks.NitroniumBlock;
 import com.faidedtech.randomstuff.blocks.NitroniumOre;
 import com.faidedtech.randomstuff.blocks.OrangeBlock;
+import com.faidedtech.randomstuff.blocks.OrangeGrass;
 import com.faidedtech.randomstuff.blocks.OrangeOre;
 import com.faidedtech.randomstuff.blocks.PlatinumBlock;
 import com.faidedtech.randomstuff.blocks.PlatinumOre;
@@ -62,5 +63,9 @@ public class RegistryHandlerBlocks {
 	public static final RegistryObject<Block> TITANIUM_ORE = BLOCKS.register("titanium_ore", () -> new TitaniumOre());
 	public static final RegistryObject<Block> TIN_ORE = BLOCKS.register("tin_ore", () -> new TinOre());
 	public static final RegistryObject<Block> NITRONIUM_ORE = BLOCKS.register("nitronium_ore", () -> new NitroniumOre());
+	
+	//Orange Biome blocks
+	public static final RegistryObject<Block> ORANGE_GRASS = BLOCKS.register("orange_grass", () -> new OrangeGrass());
+	//public static final RegistryObject<Block> ORANGE_DIRT = BLOCKS.register("orange_dirt", () -> new OrangeDirt());
 	
 }

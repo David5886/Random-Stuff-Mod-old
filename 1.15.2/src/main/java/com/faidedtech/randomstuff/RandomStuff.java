@@ -4,6 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +22,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.faidedtech.randomstuff.util.BiomeInit;
+import com.faidedtech.randomstuff.util.DimensionInit;
 import com.faidedtech.randomstuff.util.RegistryHandler;
 import com.faidedtech.randomstuff.util.RegistryHandlerBlocks;
 import com.faidedtech.randomstuff.world.gen.AmethystOreGen;
@@ -47,10 +51,11 @@ import java.util.stream.Collectors;
 public class RandomStuff
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "randomstuff";
     public static final String NAME = "Random Stuff Mod";
     public static final String VERSION = "0.1b";
+    public static final ResourceLocation BLUE_DIM_TYPE = new ResourceLocation(MODID, "blue");
 
 
     /**
@@ -65,12 +70,21 @@ public class RandomStuff
         //Initialize items and blocks into the game
         RegistryHandler.init();
         RegistryHandlerBlocks.init();
+        BiomeInit.init();
+        DimensionInit.init();
 
         // Register ourselves for server and other game events we are interested in
 
         MinecraftForge.EVENT_BUS.register(this);
         
     }
+    
+    @SubscribeEvent
+    public static void onRegisterBiomes(final RegistryEvent.Register<Biome> event) {
+    	BiomeInit.registerBiomes();
+    }
+    
+   
 
     /**
      * Code that runs during game setup, outputs to the console at startup

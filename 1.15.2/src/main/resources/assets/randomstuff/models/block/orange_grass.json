@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "side": "randomstuff:blocks/orange_grass_side",
+        "down": "randomstuff:blocks/orange_grass_bottom",
+        "up": "randomstuff:blocks/orange_grass_top"
+        
+    }
+}
