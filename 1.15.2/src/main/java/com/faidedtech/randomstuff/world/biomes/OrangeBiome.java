@@ -15,7 +15,11 @@ public class OrangeBiome extends Biome {
 
 	public OrangeBiome(Builder biomeBuilder) {
 		super(biomeBuilder);
-		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CAT, 10, 3, 5));
+		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CAT, 15, 3, 5));
+		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.BEE, 25, 5, 10));
+		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 50, 6, 8));
+		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.FOX, 25, 2, 4));
+		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.WOLF, 20, 5, 8));
 		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 50, 5, 10));
 		this.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(WorldCarver.CAVE, new ProbabilityConfig(0.14285715F)));
 		this.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(WorldCarver.CANYON, new ProbabilityConfig(0.01F)));
@@ -23,6 +27,10 @@ public class OrangeBiome extends Biome {
 		DefaultBiomeFeatures.addOres(this);
 		DefaultBiomeFeatures.addMonsterRooms(this);
 		DefaultBiomeFeatures.addSparseOakTrees(this);
+		DefaultBiomeFeatures.addBerryBushes(this);
+		DefaultBiomeFeatures.addReedsAndPumpkins(this);
+		DefaultBiomeFeatures.addGrass(this);
+		DefaultBiomeFeatures.addOakTreesFlowersGrass(this);
 		
 		
 		
