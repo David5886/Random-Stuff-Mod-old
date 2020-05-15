@@ -5,6 +5,7 @@ import com.faidedtech.randomstuff.blocks.AmethystBlock;
 import com.faidedtech.randomstuff.blocks.AmethystOre;
 import com.faidedtech.randomstuff.blocks.LeadBlock;
 import com.faidedtech.randomstuff.blocks.LeadOre;
+import com.faidedtech.randomstuff.blocks.ModSaplingBlock;
 import com.faidedtech.randomstuff.blocks.NitroniumBlock;
 import com.faidedtech.randomstuff.blocks.NitroniumOre;
 import com.faidedtech.randomstuff.blocks.OrangeBlock;
@@ -19,8 +20,15 @@ import com.faidedtech.randomstuff.blocks.TinBlock;
 import com.faidedtech.randomstuff.blocks.TinOre;
 import com.faidedtech.randomstuff.blocks.TitaniumBlock;
 import com.faidedtech.randomstuff.blocks.TitaniumOre;
+import com.faidedtech.randomstuff.world.feature.OrangeTree;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.LogBlock;
+import net.minecraft.block.SaplingBlock;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -68,4 +76,9 @@ public class RegistryHandlerBlocks {
 	public static final RegistryObject<Block> ORANGE_GRASS = BLOCKS.register("orange_grass", () -> new OrangeGrass());
 	//public static final RegistryObject<Block> ORANGE_DIRT = BLOCKS.register("orange_dirt", () -> new OrangeDirt());
 	
+	//Tree blocks
+	public static final RegistryObject<Block> ORANGE_PLANK = BLOCKS.register("orange_plank", () -> new Block(Block.Properties.from(Blocks.DARK_OAK_PLANKS)));
+	public static final RegistryObject<Block> ORANGE_LOG = BLOCKS.register("orange_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.DARK_OAK_LOG)));
+	public static final RegistryObject<Block> ORANGE_LEAVES = BLOCKS.register("orange_leaves", () -> new LeavesBlock(Block.Properties.from(Blocks.DARK_OAK_LEAVES)));
+	public static final RegistryObject<Block> ORANGE_SAPLING = BLOCKS.register("orange_sapling", () -> new ModSaplingBlock(() -> new OrangeTree(), Block.Properties.from(Blocks.DARK_OAK_SAPLING)));
 }

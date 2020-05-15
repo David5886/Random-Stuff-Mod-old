@@ -88,5 +88,9 @@
   "item.randomstuff.tin_axe": "Tin Axe",
   "item.randomstuff.tin_shovel": "Tin Shovel",
   "item.randomstuff.tin_hoe": "Tin Hoe",
-  "block.randomstuff.orange_grass": "Orange Grass"
+  "block.randomstuff.orange_grass": "Orange Grass",
+  "block.randomstuff.orange_plank": "Orange Planks",
+  "block.randomstuff.orange_log": "Orange Log",
+  "block.randomstuff.orange_sapling": "Orange Sapling",
+  "block.randomstuff.orange_leaves": "Orange_Leaves"
 }

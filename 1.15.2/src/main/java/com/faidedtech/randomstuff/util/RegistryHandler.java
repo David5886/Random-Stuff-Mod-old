@@ -112,7 +112,11 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> TITANIUM_BLOCK_ITEM = ITEMS.register("titanium_block", () -> new BlockItem(RegistryHandlerBlocks.TITANIUM_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> TIN_BLOCK_ITEM = ITEMS.register("tin_block", () -> new BlockItem(RegistryHandlerBlocks.TIN_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> NITRONIUM_BLOCK_ITEM = ITEMS.register("nitronium_block", () -> new BlockItem(RegistryHandlerBlocks.NITRONIUM_BLOCK.get(), new Item.Properties().group(RandomStuff.TAB)));
-	
+	public static final RegistryObject<Item> ORANGE_LOG_ITEM = ITEMS.register("orange_log", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_LOG.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> ORANGE_PLANK_ITEM = ITEMS.register("orange_plank", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_PLANK.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> ORANGE_LEAVES_ITEM = ITEMS.register("orange_leaves", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_LEAVES.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> ORANGE_SAPLING_ITEM = ITEMS.register("orange_sapling", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_SAPLING.get(), new Item.Properties().group(RandomStuff.TAB)));
+
 	
 	/**
 	 * Grass

@@ -1,5 +1,7 @@
 package com.faidedtech.randomstuff.world.biomes;
 
+import com.faidedtech.randomstuff.world.feature.OrangeTree;
+
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.util.math.MathHelper;
@@ -10,6 +12,8 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.carver.WorldCarver;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.ProbabilityConfig;
+import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
+import net.minecraft.world.gen.placement.Placement;
 
 public class OrangeBiome extends Biome {
 
@@ -31,6 +35,8 @@ public class OrangeBiome extends Biome {
 		DefaultBiomeFeatures.addReedsAndPumpkins(this);
 		DefaultBiomeFeatures.addGrass(this);
 		DefaultBiomeFeatures.addOakTreesFlowersGrass(this);
+		
+		this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.NORMAL_TREE.withConfiguration(OrangeTree.ORANGE_TREE_CONFIG).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(5, 0.1f, 1))));
 		
 		
 		

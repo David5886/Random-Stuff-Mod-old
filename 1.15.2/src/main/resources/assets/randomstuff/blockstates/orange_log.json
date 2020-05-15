@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "randomstuff:block/orange_log" },
+        "axis=z":   { "model": "randomstuff:block/orange_log", "x": 90 },
+        "axis=x":   { "model": "randomstuff:block/orange_log", "x": 90, "y": 90 }
+    }
+}

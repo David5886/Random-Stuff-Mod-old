@@ -2,6 +2,8 @@ package com.faidedtech.randomstuff;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -107,6 +109,7 @@ public class RandomStuff
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
+       // RenderTypeLookup.setRenderLayer(RegistryHandlerBlocks.ORANGE_SAPLING.get(), RenderType.getCutout());
     }
     
     public static final ItemGroup TAB = new ItemGroup("randomTab") {
