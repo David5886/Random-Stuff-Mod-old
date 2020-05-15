@@ -36,7 +36,7 @@ public class OrangeBiome extends Biome {
 		DefaultBiomeFeatures.addGrass(this);
 		DefaultBiomeFeatures.addOakTreesFlowersGrass(this);
 		
-		this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.NORMAL_TREE.withConfiguration(OrangeTree.ORANGE_TREE_CONFIG).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(5, 0.1f, 1))));
+		this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.NORMAL_TREE.withConfiguration(OrangeTree.ORANGE_TREE_CONFIG).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(0, 0.1f, 1))));
 		
 		
 		

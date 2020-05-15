@@ -77,8 +77,8 @@ public class RegistryHandlerBlocks {
 	//public static final RegistryObject<Block> ORANGE_DIRT = BLOCKS.register("orange_dirt", () -> new OrangeDirt());
 	
 	//Tree blocks
-	public static final RegistryObject<Block> ORANGE_PLANK = BLOCKS.register("orange_plank", () -> new Block(Block.Properties.from(Blocks.DARK_OAK_PLANKS)));
-	public static final RegistryObject<Block> ORANGE_LOG = BLOCKS.register("orange_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.DARK_OAK_LOG)));
-	public static final RegistryObject<Block> ORANGE_LEAVES = BLOCKS.register("orange_leaves", () -> new LeavesBlock(Block.Properties.from(Blocks.DARK_OAK_LEAVES)));
-	public static final RegistryObject<Block> ORANGE_SAPLING = BLOCKS.register("orange_sapling", () -> new ModSaplingBlock(() -> new OrangeTree(), Block.Properties.from(Blocks.DARK_OAK_SAPLING)));
+	public static final RegistryObject<Block> ORANGE_PLANK = BLOCKS.register("orange_plank", () -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));
+	public static final RegistryObject<Block> ORANGE_LOG = BLOCKS.register("orange_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
+	public static final RegistryObject<Block> ORANGE_LEAVES = BLOCKS.register("orange_leaves", () -> new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)));
+	public static final RegistryObject<Block> ORANGE_SAPLING = BLOCKS.register("orange_sapling", () -> new ModSaplingBlock(() -> new OrangeTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
 }

@@ -13,14 +13,15 @@ import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
 import net.minecraftforge.common.IPlantable;
 
 public class OrangeTree extends Tree {
-	
-	public static final TreeFeatureConfig ORANGE_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(RegistryHandlerBlocks.ORANGE_LOG.get().getDefaultState()), new SimpleBlockStateProvider(RegistryHandlerBlocks.ORANGE_LEAVES.get().getDefaultState()), new BlobFoliagePlacer(3, 0))).baseHeight(8).heightRandA(5).foliageHeight(3).ignoreVines().setSapling((IPlantable) RegistryHandlerBlocks.ORANGE_SAPLING.get()).build();
+
+	public static final TreeFeatureConfig ORANGE_TREE_CONFIG = (new TreeFeatureConfig.Builder(
+			new SimpleBlockStateProvider(RegistryHandlerBlocks.ORANGE_LOG.get().getDefaultState()),
+			new SimpleBlockStateProvider(RegistryHandlerBlocks.ORANGE_LEAVES.get().getDefaultState()),
+			new BlobFoliagePlacer(2, 0))).baseHeight(5).heightRandA(4).trunkTopOffset(0).foliageHeight(3).ignoreVines()
+					.setSapling((IPlantable) RegistryHandlerBlocks.ORANGE_SAPLING.get()).build();
 
 	@Override
 	protected ConfiguredFeature<TreeFeatureConfig, ?> getTreeFeature(Random randomIn, boolean b) {
 		return Feature.NORMAL_TREE.withConfiguration(ORANGE_TREE_CONFIG);
 	}
-
-	
-	
 }
