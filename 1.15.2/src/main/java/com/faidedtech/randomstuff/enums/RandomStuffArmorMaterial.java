@@ -1,11 +1,15 @@
 package com.faidedtech.randomstuff.enums;
 
 import java.util.function.Supplier;
+import com.faidedtech.randomstuff.RandomStuff;
+import com.faidedtech.randomstuff.util.RegistryHandler;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
+import net.minecraft.item.*;
 
 /**
  * Armor material enum for the Random Stuff Mod
@@ -13,9 +17,33 @@ import net.minecraft.util.SoundEvent;
  *
  */
 public enum RandomStuffArmorMaterial implements IArmorMaterial {
-	;
+	EMERALD(RandomStuff.MODID + ":emerald", 5, new int[] { 5, 9, 8, 5 }, 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 7.0F, () -> {
+		return Ingredient.fromItems(Items.EMERALD);
+	}),
+	SILVER(RandomStuff.MODID + ":silver", 4, new int[] { 4, 7, 6, 3 }, 25, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 6.0F, () -> {
+		return Ingredient.fromItems(RegistryHandler.SILVER_INGOT.get());
+	}),
+	OBSIDIAN(RandomStuff.MODID + ":obsidian", 5, new int[] { 5, 8, 7, 5 }, 35, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 7.0F, () -> {
+		return Ingredient.fromItems(RegistryHandler.OBSIDIAN_INGOT.get());
+	}),
+	ORANGE(RandomStuff.MODID + ":orange", 5, new int[] { 6, 10, 9, 7 }, 38, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 7.5F, () -> {
+		return Ingredient.fromItems(RegistryHandler.ORANGE_INGOT.get());
+	}),
+	PLATINUM(RandomStuff.MODID + ":platinum", 8, new int[] { 10, 18, 16, 10 }, 45, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 9.5F, () -> {
+		return Ingredient.fromItems(RegistryHandler.PLATINUM_INGOT.get());
+	}),
+	TITANIUM(RandomStuff.MODID + ":titanium", 9, new int[] { 12, 20, 18, 13 }, 60, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.5F, () -> {
+		return Ingredient.fromItems(RegistryHandler.TITANIUM_INGOT.get());
+	}),
+	NITRONIUM(RandomStuff.MODID + ":nitronium", 12, new int[] { 14, 24, 22, 16 }, 75, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 12.5F, () -> {
+		return Ingredient.fromItems(Items.EMERALD);
+	}),
+	CDIAMOND(RandomStuff.MODID + ":condenseddiamond", 15, new int[] { 20, 34, 32, 26 }, 90, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 15.5F, () -> {
+		return Ingredient.fromItems(RegistryHandler.SUPER_DIAMOND.get());
+	});
 	
-	private static final int[] MAX_DAMAGE_ARRAY = new int[] {13, 15, 16, 11}; //Change these if wanted
+	
+	private static final int[] MAX_DAMAGE_ARRAY = new int[] {17, 20, 21, 16}; //Change these if wanted
 	private final String name;
 	private final int durability;
 	private final int[] damageReduction;

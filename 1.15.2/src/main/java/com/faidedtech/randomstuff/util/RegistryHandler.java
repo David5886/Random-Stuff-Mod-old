@@ -45,9 +45,11 @@ import com.faidedtech.randomstuff.items.SuperDiamondSmallChunk;
 import com.faidedtech.randomstuff.items.TinIngot;
 import com.faidedtech.randomstuff.items.TitaniumIngot;
 import com.faidedtech.randomstuff.items.WaterSword;
+import com.faidedtech.randomstuff.enums.RandomStuffArmorMaterial;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Food;
 import net.minecraft.item.IItemTier;
@@ -57,6 +59,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraft.inventory.EquipmentSlotType;;
 
 /**
  * Class that registers items and block items into the game
@@ -143,6 +146,78 @@ public class RegistryHandler {
 	
 	public static final RegistryObject<Item> WATER_SWORD = ITEMS.register("water_sword", () -> new WaterSword(RandomStuffTier.TOOL_WATER , new Item.Properties()));
 	public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword", () -> new FireSword(RandomStuffTier.TOOL_FIRE, new Item.Properties()));
+	
+	/**
+	 * Armor
+	 */
+	public static final RegistryObject<ArmorItem> EMERALD_HELMET = ITEMS.register("emerald_helmet", () -> new ArmorItem(RandomStuffArmorMaterial.EMERALD, EquipmentSlotType.HEAD,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate", () -> new ArmorItem(RandomStuffArmorMaterial.EMERALD, EquipmentSlotType.CHEST,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings", () -> new ArmorItem(RandomStuffArmorMaterial.EMERALD, EquipmentSlotType.LEGS,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> EMERALD_BOOTS = ITEMS.register("emerald_boots", () -> new ArmorItem(RandomStuffArmorMaterial.EMERALD, EquipmentSlotType.FEET,
+			new Item.Properties().group(RandomStuff.TAB)));
+	
+	
+	public static final RegistryObject<ArmorItem> SILVER_HELMET = ITEMS.register("silver_helmet", () -> new ArmorItem(RandomStuffArmorMaterial.SILVER, EquipmentSlotType.HEAD,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> SILVER_CHESTPLATE = ITEMS.register("silver_chestplate", () -> new ArmorItem(RandomStuffArmorMaterial.SILVER, EquipmentSlotType.CHEST,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> SILVER_LEGGINGS = ITEMS.register("silver_leggings", () -> new ArmorItem(RandomStuffArmorMaterial.SILVER, EquipmentSlotType.LEGS,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> SILVER_BOOTS = ITEMS.register("silver_boots", () -> new ArmorItem(RandomStuffArmorMaterial.SILVER, EquipmentSlotType.FEET,
+			new Item.Properties().group(RandomStuff.TAB)));
+	
+	
+	public static final RegistryObject<ArmorItem> OBSIDIAN_HELMET = ITEMS.register("obsidian_helmet", () -> new ArmorItem(RandomStuffArmorMaterial.OBSIDIAN, EquipmentSlotType.HEAD,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> OBSIDIAN_CHESTPLATE = ITEMS.register("obsidian_chestplate", () -> new ArmorItem(RandomStuffArmorMaterial.OBSIDIAN, EquipmentSlotType.CHEST,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> OBSIDIAN_LEGGINGS = ITEMS.register("obsidian_leggings", () -> new ArmorItem(RandomStuffArmorMaterial.OBSIDIAN, EquipmentSlotType.LEGS,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> OBSIDIAN_BOOTS = ITEMS.register("obsidian_boots", () -> new ArmorItem(RandomStuffArmorMaterial.OBSIDIAN, EquipmentSlotType.FEET,
+			new Item.Properties().group(RandomStuff.TAB)));
+	
+	
+	public static final RegistryObject<ArmorItem> ORANGE_HELMET = ITEMS.register("orange_helmet", () -> new ArmorItem(RandomStuffArmorMaterial.ORANGE, EquipmentSlotType.HEAD,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> ORANGE_CHESTPLATE = ITEMS.register("orange_chestplate", () -> new ArmorItem(RandomStuffArmorMaterial.ORANGE, EquipmentSlotType.CHEST,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> ORANGE_LEGGINGS = ITEMS.register("orange_leggings", () -> new ArmorItem(RandomStuffArmorMaterial.ORANGE, EquipmentSlotType.LEGS,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> ORANGE_BOOTS = ITEMS.register("orange_boots", () -> new ArmorItem(RandomStuffArmorMaterial.ORANGE, EquipmentSlotType.FEET,
+			new Item.Properties().group(RandomStuff.TAB)));
+	
+	
+	public static final RegistryObject<ArmorItem> PLATINUM_HELMET = ITEMS.register("platinum_helmet", () -> new ArmorItem(RandomStuffArmorMaterial.PLATINUM, EquipmentSlotType.HEAD,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> PLATINUM_CHESTPLATE = ITEMS.register("platinum_chestplate", () -> new ArmorItem(RandomStuffArmorMaterial.PLATINUM, EquipmentSlotType.CHEST,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> PLATINUM_LEGGINGS = ITEMS.register("platinum_leggings", () -> new ArmorItem(RandomStuffArmorMaterial.PLATINUM, EquipmentSlotType.LEGS,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> PLATINUM_BOOTS = ITEMS.register("platinum_boots", () -> new ArmorItem(RandomStuffArmorMaterial.PLATINUM, EquipmentSlotType.FEET,
+			new Item.Properties().group(RandomStuff.TAB)));
+	
+	
+	public static final RegistryObject<ArmorItem> TITANIUM_HELMET = ITEMS.register("titanium_helmet", () -> new ArmorItem(RandomStuffArmorMaterial.TITANIUM, EquipmentSlotType.HEAD,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate", () -> new ArmorItem(RandomStuffArmorMaterial.TITANIUM, EquipmentSlotType.CHEST,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> TITANIUM_LEGGINGS = ITEMS.register("titanium_leggings", () -> new ArmorItem(RandomStuffArmorMaterial.TITANIUM, EquipmentSlotType.LEGS,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> TITANIUM_BOOTS = ITEMS.register("titanium_boots", () -> new ArmorItem(RandomStuffArmorMaterial.TITANIUM, EquipmentSlotType.FEET,
+			new Item.Properties().group(RandomStuff.TAB)));
+	
+	
+	public static final RegistryObject<ArmorItem> NITRONIUM_HELMET = ITEMS.register("nitronium_helmet", () -> new ArmorItem(RandomStuffArmorMaterial.NITRONIUM, EquipmentSlotType.HEAD,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> NITRONIUM_CHESTPLATE = ITEMS.register("nitronium_chestplate", () -> new ArmorItem(RandomStuffArmorMaterial.NITRONIUM, EquipmentSlotType.CHEST,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> NITRONIUM_LEGGINGS = ITEMS.register("nitronium_leggings", () -> new ArmorItem(RandomStuffArmorMaterial.NITRONIUM, EquipmentSlotType.LEGS,
+			new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<ArmorItem> NITRONIUM_BOOTS = ITEMS.register("nitronium_boots", () -> new ArmorItem(RandomStuffArmorMaterial.NITRONIUM, EquipmentSlotType.FEET,
+			new Item.Properties().group(RandomStuff.TAB)));
 	
 	/**
 	 * Create new tools below
