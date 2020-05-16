@@ -24,6 +24,6 @@ david@faidedtech.com.
 
 Please report any bugs to the GitHub. To report unauthorized use, or postings, of the mod, please email david@faidedtech.com
 
-All code is available to view at github.com/David5886/Random-Stuff-Mod
+All code is available to view at https://github.com/David5886/Random-Stuff-Mod
 
 Textures were mostly made by RCXCrafter for use in this mod.
