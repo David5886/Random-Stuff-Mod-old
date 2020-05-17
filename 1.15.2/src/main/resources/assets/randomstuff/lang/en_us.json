@@ -92,7 +92,7 @@
   "block.randomstuff.orange_plank": "Orange Planks",
   "block.randomstuff.orange_log": "Orange Log",
   "block.randomstuff.orange_sapling": "Orange Sapling",
-  "block.randomstuff.orange_leaves": "Orange_Leaves",
+  "block.randomstuff.orange_leaves": "Orange Leaves",
   "item.randomstuff.emerald_helmet": "Emerald Helmet",
   "item.randomstuff.emerald_chestplate": "Emerald Chestplate",
   "item.randomstuff.emerald_leggings": "Emerald Leggings",
@@ -120,5 +120,9 @@
   "item.randomstuff.nitronium_helmet": "Nitronium Helmet",
   "item.randomstuff.nitronium_chestplate": "Nitronium Chestplate",
   "item.randomstuff.nitronium_leggings": "Nitronium Leggings",
-  "item.randomstuff.nitronium_boots": "Nitronium Boots"
+  "item.randomstuff.nitronium_boots": "Nitronium Boots",
+  "block.randomstuff.blue_crop": "BlueBell Seeds",
+  "item.randomstuff.bluebell": "Bluebell Pepper",
+  "block.randomstuff.tomato_crop": "Tomato Seeds",
+  "item.randomstuff.tomato": "Tomato"
 }

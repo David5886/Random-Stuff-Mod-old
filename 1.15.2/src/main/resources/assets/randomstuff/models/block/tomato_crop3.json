@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "randomstuff:blocks/tomato_crop3"
+    }
+}

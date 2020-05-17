@@ -3,6 +3,7 @@ package com.faidedtech.randomstuff.util;
 import com.faidedtech.randomstuff.RandomStuff;
 import com.faidedtech.randomstuff.blocks.AmethystBlock;
 import com.faidedtech.randomstuff.blocks.AmethystOre;
+import com.faidedtech.randomstuff.blocks.BlueCrop;
 import com.faidedtech.randomstuff.blocks.LeadBlock;
 import com.faidedtech.randomstuff.blocks.LeadOre;
 import com.faidedtech.randomstuff.blocks.ModSaplingBlock;
@@ -20,8 +21,8 @@ import com.faidedtech.randomstuff.blocks.TinBlock;
 import com.faidedtech.randomstuff.blocks.TinOre;
 import com.faidedtech.randomstuff.blocks.TitaniumBlock;
 import com.faidedtech.randomstuff.blocks.TitaniumOre;
+import com.faidedtech.randomstuff.blocks.TomatoCrop;
 import com.faidedtech.randomstuff.world.feature.OrangeTree;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.LeavesBlock;
@@ -44,12 +45,14 @@ public class RegistryHandlerBlocks {
 	
 	public static void init() {
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-
 	}
 	
 	/**
 	 * Register new blocks below:
 	 */
+	//Crops
+	public static final RegistryObject<Block> BLUE_CROP = BLOCKS.register("blue_crop", () -> new BlueCrop(Block.Properties.from(Blocks.WHEAT)));
+	public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop", () -> new TomatoCrop(Block.Properties.from(Blocks.WHEAT)));
 	
 	//Blocks
 	public static final RegistryObject<Block> silver_block = BLOCKS.register("silver_block", () -> new SilverBlock());

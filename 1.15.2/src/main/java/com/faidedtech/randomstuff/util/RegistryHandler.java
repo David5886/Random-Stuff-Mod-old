@@ -77,12 +77,7 @@ public class RegistryHandler {
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		//entities.register and so on and so fourth
 	}
-	/**
-	 * Create food below. Create like a normal item. But add the .food to properties
-	 */
-	//public static final RegistryObject<Item> TEST_FOOD = ITEMS.register("test_food", () -> new DefaultItem(new Item.Properties().food(new Food.Builder().hunger(6).saturation(1.2f).build())));
-	
-	
+
 	/**
 	 * Create new items below
 	 */
@@ -120,6 +115,20 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> ORANGE_LEAVES_ITEM = ITEMS.register("orange_leaves", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_LEAVES.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> ORANGE_SAPLING_ITEM = ITEMS.register("orange_sapling", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_SAPLING.get(), new Item.Properties().group(RandomStuff.TAB)));
 
+	
+	/**
+	 * Crops
+	 */
+	
+	public static final RegistryObject<Item> BLUE_SEED = ITEMS.register("blue_seed", () -> new BlockItem(RegistryHandlerBlocks.BLUE_CROP.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> TOMATO_SEED = ITEMS.register("tomato_seed", () -> new BlockItem(RegistryHandlerBlocks.TOMATO_CROP.get(), new Item.Properties().group(RandomStuff.TAB)));
+	
+	/**
+	 * Create food below. Create like a normal item. But add the .food to properties
+	 */
+	public static final RegistryObject<Item> BLUEBELL = ITEMS.register("bluebell", () -> new DefaultItem(new Item.Properties().food(new Food.Builder().hunger(6).saturation(1.4f).build())));
+	public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato", () -> new DefaultItem(new Item.Properties().food(new Food.Builder().hunger(5).saturation(1.0f).build())));
+	
 	
 	/**
 	 * Grass
