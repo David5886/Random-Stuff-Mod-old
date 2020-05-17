@@ -1,9 +1,9 @@
 {
-    "type": "minecraft:smelting",
+    "type": "minecraft:blasting",
     "ingredient": {
         "item": "randomstuff:platinum_ore"
     },
     "result": "randomstuff:platinum_ingot",
-    "experience": 3,
-    "cookingtime": 200
+    "experience": 4.5,
+    "cookingtime": 100
 }

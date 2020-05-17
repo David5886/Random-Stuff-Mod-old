@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "randomstuff:lead_ingot"
+        }
+    },
+    "result": {
+        "item": "randomstuff:lead_block",
+        "count": 1
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "randomstuff:platinum_ingot"
+        }
+    },
+    "result": {
+        "item": "randomstuff:platinum_chestplate",
+        "count": 1
+    }
+}

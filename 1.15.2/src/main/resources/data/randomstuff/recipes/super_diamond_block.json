@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "randomstuff:super_diamond"
+        }
+    },
+    "result": {
+        "item": "randomstuff:super_diamond_block",
+        "count": 1
+    }
+}

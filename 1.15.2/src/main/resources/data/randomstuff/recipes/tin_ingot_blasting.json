@@ -1,9 +1,9 @@
 {
-    "type": "minecraft:smelting",
+    "type": "minecraft:blasting",
     "ingredient": {
         "item": "randomstuff:tin_ore"
     },
     "result": "randomstuff:tin_ingot",
-    "experience": 2,
-    "cookingtime": 200
+    "experience": 0.2,
+    "cookingtime": 100
 }

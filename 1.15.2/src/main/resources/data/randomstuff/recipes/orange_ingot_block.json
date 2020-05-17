@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "randomstuff:orange_block"
+        }
+    ],
+    "result": {
+        "item": "randomstuff:orange_ingot",
+        "count": 9
+    }
+}

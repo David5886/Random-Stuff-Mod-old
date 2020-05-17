@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:carrot"
+        },
+        {
+            "item": "randomstuff:tomato"
+        }
+    ],
+    "result": {
+        "item": "randomstuff:blue_seed",
+        "count": 1
+    }
+}

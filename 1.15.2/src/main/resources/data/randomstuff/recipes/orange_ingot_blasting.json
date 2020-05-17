@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "randomstuff:orange_ore"
+    },
+    "result": "randomstuff:orange_ingot",
+    "experience": 0.4,
+    "cookingtime": 100
+}

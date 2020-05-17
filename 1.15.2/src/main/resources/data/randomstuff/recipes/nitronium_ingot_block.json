@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "randomstuff:nitronium_block"
+        }
+    ],
+    "result": {
+        "item": "randomstuff:nitronium_ingot",
+        "count": 9
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "randomstuff:amethyst_ingot"
+        }
+    },
+    "result": {
+        "item": "randomstuff:amethyst_block",
+        "count": 1
+    }
+}

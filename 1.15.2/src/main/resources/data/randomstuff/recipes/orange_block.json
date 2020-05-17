@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "randomstuff:orange_ingot"
+        }
+    },
+    "result": {
+        "item": "randomstuff:orange_block",
+        "count": 1
+    }
+}

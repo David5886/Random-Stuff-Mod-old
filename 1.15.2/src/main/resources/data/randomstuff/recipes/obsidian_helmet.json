@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "randomstuff:obsidian_ingot"
+        }
+    },
+    "result": {
+        "item": "randomstuff:obsidian_helmet",
+        "count": 1
+    }
+}
