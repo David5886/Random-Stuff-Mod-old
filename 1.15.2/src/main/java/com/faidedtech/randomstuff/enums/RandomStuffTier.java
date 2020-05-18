@@ -27,7 +27,7 @@ public enum RandomStuffTier implements IItemTier {
 	TOOL_LEAD(2, 250, 4.0F, 2, 12, () -> Ingredient.fromItems(RegistryHandler.LEAD_INGOT.get())),
 	TOOL_PLATINUM(8, 5000, 11.0F, 8, 20, () -> Ingredient.fromItems(RegistryHandler.PLATINUM_INGOT.get())),
 	TOOL_TITANIUM(7, 1000, 8.0F, 8, 16, () -> Ingredient.fromItems(RegistryHandler.TITANIUM_INGOT.get())),
-	TOOL_TIN(3, 150, 5.0F, 4, 12, () -> Ingredient.fromItems(RegistryHandler.TIN_INGOT.get())),
+	TOOL_TIN(2, 150, 5.0F, 4, 12, () -> Ingredient.fromItems(RegistryHandler.TIN_INGOT.get())),
 	TOOL_SUPER(10, 50000, 20.0F, 20, 50, () -> Ingredient.fromItems(RegistryHandler.SUPER_DIAMOND.get())),
 	TOOL_NITRONIUM(9, 7500, 13.5F, 10, 25, () -> Ingredient.fromItems(RegistryHandler.NITRONIUM_INGOT.get()))
 	
