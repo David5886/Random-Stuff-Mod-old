@@ -20,8 +20,8 @@ public class TitaniumOreGen {
 	public static void generateOre() {
 		for(Biome biome : ForgeRegistries.BIOMES) {
 			//if(biome == Biomes.PLAINS) {
-				ConfiguredPlacement customConfig = Placement.COUNT_RANGE.configure(new CountRangeConfig(5, 5, 5, 30));
-				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandlerBlocks.TITANIUM_ORE.get().getDefaultState(), 3)).withPlacement(customConfig));
+				ConfiguredPlacement customConfig = Placement.COUNT_RANGE.configure(new CountRangeConfig(6, 5, 5, 30));
+				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandlerBlocks.TITANIUM_ORE.get().getDefaultState(), 4)).withPlacement(customConfig));
 			//}
 		}
 	}
