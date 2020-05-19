@@ -22,11 +22,11 @@ public enum RandomStuffTier implements IItemTier {
 	TOOL_OBSIDIAN(6, 1800, 10.0F, 4, 15, () -> Ingredient.fromItems(RegistryHandler.OBSIDIAN_INGOT.get())),
 	TOOL_AMETHYST(4, 400, 5.0F, 4, 10, () -> Ingredient.fromItems(RegistryHandler.AMETHYST.get())),
 	TOOL_FIRE(3, 1500, 8.5F, 3, 19, () -> Ingredient.EMPTY),
-	TOOL_EMERALD(5, 2500, 10.5F, 5, 30, () -> Ingredient.fromItems(Items.EMERALD)),
+	TOOL_EMERALD(5, 2000, 10.5F, 5, 30, () -> Ingredient.fromItems(Items.EMERALD)),
 	TOOL_ORANGE(5, 800, 6.5F, 5, 15, () -> Ingredient.fromItems(RegistryHandler.ORANGE_INGOT.get())),
 	TOOL_LEAD(2, 250, 4.0F, 2, 12, () -> Ingredient.fromItems(RegistryHandler.LEAD_INGOT.get())),
 	TOOL_PLATINUM(8, 5000, 11.0F, 8, 20, () -> Ingredient.fromItems(RegistryHandler.PLATINUM_INGOT.get())),
-	TOOL_TITANIUM(7, 1000, 8.0F, 8, 16, () -> Ingredient.fromItems(RegistryHandler.TITANIUM_INGOT.get())),
+	TOOL_TITANIUM(7, 3000, 8.0F, 8, 16, () -> Ingredient.fromItems(RegistryHandler.TITANIUM_INGOT.get())),
 	TOOL_TIN(2, 225, 5.0F, 4, 12, () -> Ingredient.fromItems(RegistryHandler.TIN_INGOT.get())),
 	TOOL_SUPER(10, 50000, 20.0F, 20, 50, () -> Ingredient.fromItems(RegistryHandler.SUPER_DIAMOND.get())),
 	TOOL_NITRONIUM(9, 7500, 13.5F, 10, 25, () -> Ingredient.fromItems(RegistryHandler.NITRONIUM_INGOT.get()))
