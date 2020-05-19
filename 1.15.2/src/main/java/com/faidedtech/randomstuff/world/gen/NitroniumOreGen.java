@@ -20,8 +20,8 @@ public class NitroniumOreGen {
 	public static void generateOre() {
 		for(Biome biome : ForgeRegistries.BIOMES) {
 			//if(biome == Biomes.PLAINS) {
-				ConfiguredPlacement customConfig = Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 5, 5, 20));
-				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandlerBlocks.PLATINUM_ORE.get().getDefaultState(), 2)).withPlacement(customConfig));
+				ConfiguredPlacement customConfig = Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 5, 5, 30));
+				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandlerBlocks.NITRONIUM_ORE.get().getDefaultState(), 3)).withPlacement(customConfig));
 			//}
 		}
 	}

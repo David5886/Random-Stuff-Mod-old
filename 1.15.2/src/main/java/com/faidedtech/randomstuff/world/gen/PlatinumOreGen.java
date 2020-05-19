@@ -20,8 +20,8 @@ public class PlatinumOreGen {
 	public static void generateOre() {
 		for(Biome biome : ForgeRegistries.BIOMES) {
 			//if(biome == Biomes.PLAINS) {
-				ConfiguredPlacement customConfig = Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 5, 5, 30));
-				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandlerBlocks.PLATINUM_ORE.get().getDefaultState(), 4)).withPlacement(customConfig));
+				ConfiguredPlacement customConfig = Placement.COUNT_RANGE.configure(new CountRangeConfig(5, 5, 5, 30));
+				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandlerBlocks.PLATINUM_ORE.get().getDefaultState(), 5)).withPlacement(customConfig));
 			//}
 		}
 	}

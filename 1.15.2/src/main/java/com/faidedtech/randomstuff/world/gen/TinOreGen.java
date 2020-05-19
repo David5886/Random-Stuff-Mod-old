@@ -21,8 +21,8 @@ public class TinOreGen {
 	public static void generateOre() {
 		for(Biome biome : ForgeRegistries.BIOMES) {
 			//if(biome == Biomes.PLAINS) {
-				ConfiguredPlacement customConfig = Placement.COUNT_RANGE.configure(new CountRangeConfig(15, 5, 5, 50));
-				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandlerBlocks.TIN_ORE.get().getDefaultState(), 10)).withPlacement(customConfig));
+				ConfiguredPlacement customConfig = Placement.COUNT_RANGE.configure(new CountRangeConfig(14, 5, 5, 40));
+				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandlerBlocks.TIN_ORE.get().getDefaultState(), 8)).withPlacement(customConfig));
 			//}
 		}
 	}
