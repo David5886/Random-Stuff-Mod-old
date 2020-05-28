@@ -23,7 +23,7 @@ public class BlueBiomeProvider extends BiomeProvider {
 
 	@Override
 	public Biome getNoiseBiome(int x, int y, int z) {
-		return BiomeInit.ORANGE_BIOME.get();
+		return BiomeInit.BLUE_BIOME.get();
 		//return Biomes.PLAINS;
 	}
 
