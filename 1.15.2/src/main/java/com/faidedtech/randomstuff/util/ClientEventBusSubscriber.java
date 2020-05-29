@@ -17,6 +17,7 @@ public class ClientEventBusSubscriber {
 	@SubscribeEvent
 	public static void clientSetup(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(RegistryHandlerBlocks.ORANGE_SAPLING.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(RegistryHandlerBlocks.BLUE_SAPLING.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(RegistryHandlerBlocks.BLUE_CROP.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(RegistryHandlerBlocks.TOMATO_CROP.get(), RenderType.getCutout());
 

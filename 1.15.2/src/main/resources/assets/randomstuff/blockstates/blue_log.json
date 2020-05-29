@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "randomstuff:block/blue_log" },
+        "axis=z":   { "model": "randomstuff:block/blue_log", "x": 90 },
+        "axis=x":   { "model": "randomstuff:block/blue_log", "x": 90, "y": 90 }
+    }
+}

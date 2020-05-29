@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"randomstuff:orange_leaves"
+		"randomstuff:orange_leaves",
+		"randomstuff:blue_leaves"
 	]
 }

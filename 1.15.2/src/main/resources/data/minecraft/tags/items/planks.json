@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"randomstuff:orange_plank"
+		"randomstuff:orange_plank",
+		"randomstuff:blue_plank"
 	]
 }

@@ -115,6 +115,11 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> ORANGE_LEAVES_ITEM = ITEMS.register("orange_leaves", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_LEAVES.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> ORANGE_SAPLING_ITEM = ITEMS.register("orange_sapling", () -> new BlockItem(RegistryHandlerBlocks.ORANGE_SAPLING.get(), new Item.Properties().group(RandomStuff.TAB)));
 
+	public static final RegistryObject<Item> BLUE_LOG_ITEM = ITEMS.register("blue_log", () -> new BlockItem(RegistryHandlerBlocks.BLUE_LOG.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> BLUE_PLANK_ITEM = ITEMS.register("blue_plank", () -> new BlockItem(RegistryHandlerBlocks.BLUE_PLANK.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> BLUE_LEAVES_ITEM = ITEMS.register("blue_leaves", () -> new BlockItem(RegistryHandlerBlocks.BLUE_LEAVES.get(), new Item.Properties().group(RandomStuff.TAB)));
+	public static final RegistryObject<Item> BLUE_SAPLING_ITEM = ITEMS.register("blue_sapling", () -> new BlockItem(RegistryHandlerBlocks.BLUE_SAPLING.get(), new Item.Properties().group(RandomStuff.TAB)));
+
 	
 	/**
 	 * Crops

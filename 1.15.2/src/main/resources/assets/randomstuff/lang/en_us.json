@@ -124,5 +124,9 @@
   "block.randomstuff.blue_crop": "BlueBell Seeds",
   "item.randomstuff.bluebell": "Bluebell Pepper",
   "block.randomstuff.tomato_crop": "Tomato Seeds",
-  "item.randomstuff.tomato": "Tomato"
+  "item.randomstuff.tomato": "Tomato",
+  "block.randomstuff.blue_plank": "Blue Planks",
+  "block.randomstuff.blue_log": "Blue Log",
+  "block.randomstuff.blue_sapling": "Blue Sapling",
+  "block.randomstuff.blue_leaves": "Blue Leaves"
 }

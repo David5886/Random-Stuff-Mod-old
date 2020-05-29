@@ -1,30 +1,28 @@
 package com.faidedtech.randomstuff.world.feature;
 
 import java.util.Random;
-import java.util.Set;
-import java.util.function.Function;
 
-import com.mojang.datafixers.Dynamic;
+import com.faidedtech.randomstuff.util.RegistryHandlerBlocks;
 
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MutableBoundingBox;
-import net.minecraft.world.gen.IWorldGenerationReader;
-import net.minecraft.world.gen.feature.AbstractSmallTreeFeature;
+import net.minecraft.block.trees.Tree;
+import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.TreeFeatureConfig;
+import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliageplacer.SpruceFoliagePlacer;
+import net.minecraftforge.common.IPlantable;
 
-public class BlueTree extends AbstractSmallTreeFeature<TreeFeatureConfig> {
+public class BlueTree extends Tree {
 
-	public BlueTree(Function<Dynamic<?>, ? extends TreeFeatureConfig> p_i225796_1_) {
-		super(p_i225796_1_);
-		// TODO Auto-generated constructor stub
-	}
+	public static final TreeFeatureConfig BLUE_TREE_CONFIG = (new TreeFeatureConfig.Builder(
+			new SimpleBlockStateProvider(RegistryHandlerBlocks.BLUE_LOG.get().getDefaultState()),
+			new SimpleBlockStateProvider(RegistryHandlerBlocks.BLUE_LEAVES.get().getDefaultState()),
+			new SpruceFoliagePlacer(3, 1))).baseHeight(8).heightRandA(35).trunkTopOffset(0).foliageHeight(16).ignoreVines()
+					.setSapling((IPlantable) RegistryHandlerBlocks.BLUE_SAPLING.get()).build();
 
 	@Override
-	protected boolean func_225557_a_(IWorldGenerationReader p_225557_1_, Random p_225557_2_, BlockPos p_225557_3_,
-			Set<BlockPos> p_225557_4_, Set<BlockPos> p_225557_5_, MutableBoundingBox p_225557_6_,
-			TreeFeatureConfig p_225557_7_) {
-		// TODO Auto-generated method stub
-		return false;
+	protected ConfiguredFeature<TreeFeatureConfig, ?> getTreeFeature(Random randomIn, boolean b) {
+		return Feature.NORMAL_TREE.withConfiguration(BLUE_TREE_CONFIG);
 	}
-
 }

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "randomstuff:bluebell"
+        }
+    ],
+    "result": {
+        "item": "randomstuff:blue_seed",
+        "count": 4
+    }
+}

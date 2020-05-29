@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"randomstuff:orange_log"
+		"randomstuff:orange_log",
+		"randomstuff:blue_log"
 	]
 }

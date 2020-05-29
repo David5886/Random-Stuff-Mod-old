@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "randomstuff:blocks/blue_sapling"
+    }
+}
