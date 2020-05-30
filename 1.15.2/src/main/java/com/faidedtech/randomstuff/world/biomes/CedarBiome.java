@@ -28,8 +28,6 @@ public class CedarBiome extends Biome {
 		//this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 50, 6, 8));
 		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.FOX, 25, 2, 4));
 		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.WOLF, 20, 5, 8));
-		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.ENDERMAN, 5, 1, 1));
-		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.HORSE, 10, 5, 6));
 		//this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 50, 5, 10));
 		this.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(WorldCarver.CAVE, new ProbabilityConfig(0.14285715F)));
 		//this.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(WorldCarver.CANYON, new ProbabilityConfig(0.01F)));
