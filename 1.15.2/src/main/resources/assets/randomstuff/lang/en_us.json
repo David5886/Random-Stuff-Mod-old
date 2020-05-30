@@ -128,5 +128,7 @@
   "block.randomstuff.blue_plank": "Blue Planks",
   "block.randomstuff.blue_log": "Blue Log",
   "block.randomstuff.blue_sapling": "Blue Sapling",
-  "block.randomstuff.blue_leaves": "Blue Leaves"
+  "block.randomstuff.blue_leaves": "Blue Leaves",
+  "block.randomstuff.onion_crop": "Onion",
+  "item.randomstuff.onion": "Onion"
 }

@@ -128,12 +128,13 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> BLUE_SEED = ITEMS.register("blue_seed", () -> new BlockItem(RegistryHandlerBlocks.BLUE_CROP.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> TOMATO_SEED = ITEMS.register("tomato_seed", () -> new BlockItem(RegistryHandlerBlocks.TOMATO_CROP.get(), new Item.Properties().group(RandomStuff.TAB)));
 	
+	
 	/**
 	 * Create food below. Create like a normal item. But add the .food to properties
 	 */
 	public static final RegistryObject<Item> BLUEBELL = ITEMS.register("bluebell", () -> new DefaultItem(new Item.Properties().food(new Food.Builder().hunger(6).saturation(1.4f).build())));
 	public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato", () -> new DefaultItem(new Item.Properties().food(new Food.Builder().hunger(5).saturation(1.0f).build())));
-	
+	public static final RegistryObject<Item> ONION = ITEMS.register("onion", () -> new BlockItem(RegistryHandlerBlocks.ONION_CROP.get(), new Item.Properties().group(RandomStuff.TAB).food(new Food.Builder().hunger(3).saturation(1.0f).build())));
 	
 	/**
 	 * Grass

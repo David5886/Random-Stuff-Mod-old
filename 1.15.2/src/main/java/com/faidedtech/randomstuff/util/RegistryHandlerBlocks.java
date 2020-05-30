@@ -9,6 +9,7 @@ import com.faidedtech.randomstuff.blocks.LeadOre;
 import com.faidedtech.randomstuff.blocks.ModSaplingBlock;
 import com.faidedtech.randomstuff.blocks.NitroniumBlock;
 import com.faidedtech.randomstuff.blocks.NitroniumOre;
+import com.faidedtech.randomstuff.blocks.OnionCrop;
 import com.faidedtech.randomstuff.blocks.OrangeBlock;
 import com.faidedtech.randomstuff.blocks.OrangeGrass;
 import com.faidedtech.randomstuff.blocks.OrangeOre;
@@ -54,6 +55,7 @@ public class RegistryHandlerBlocks {
 	//Crops
 	public static final RegistryObject<Block> BLUE_CROP = BLOCKS.register("blue_crop", () -> new BlueCrop(Block.Properties.from(Blocks.WHEAT)));
 	public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop", () -> new TomatoCrop(Block.Properties.from(Blocks.WHEAT)));
+	public static final RegistryObject<Block> ONION_CROP = BLOCKS.register("onion_crop", () -> new OnionCrop(Block.Properties.from(Blocks.WHEAT)));
 	
 	//Blocks
 	public static final RegistryObject<Block> silver_block = BLOCKS.register("silver_block", () -> new SilverBlock());

@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "randomstuff:blocks/onion_crop2"
+    }
+}
