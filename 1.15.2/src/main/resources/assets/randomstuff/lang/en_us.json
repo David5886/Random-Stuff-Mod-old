@@ -130,5 +130,6 @@
   "block.randomstuff.blue_sapling": "Blue Sapling",
   "block.randomstuff.blue_leaves": "Blue Leaves",
   "block.randomstuff.onion_crop": "Onion",
-  "item.randomstuff.onion": "Onion"
+  "item.randomstuff.onion": "Onion",
+  "block.randomstuff.cedar_sapling": "Cedar Sapling"
 }

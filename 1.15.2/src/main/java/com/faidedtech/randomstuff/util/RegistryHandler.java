@@ -120,7 +120,9 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> BLUE_LEAVES_ITEM = ITEMS.register("blue_leaves", () -> new BlockItem(RegistryHandlerBlocks.BLUE_LEAVES.get(), new Item.Properties().group(RandomStuff.TAB)));
 	public static final RegistryObject<Item> BLUE_SAPLING_ITEM = ITEMS.register("blue_sapling", () -> new BlockItem(RegistryHandlerBlocks.BLUE_SAPLING.get(), new Item.Properties().group(RandomStuff.TAB)));
 
-	
+
+	public static final RegistryObject<Item> CEDAR_SAPLING_ITEM = ITEMS.register("cedar_sapling", () -> new BlockItem(RegistryHandlerBlocks.CEDAR_SAPLING.get(), new Item.Properties().group(RandomStuff.TAB)));
+
 	/**
 	 * Crops
 	 */

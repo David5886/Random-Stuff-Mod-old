@@ -24,6 +24,7 @@ import com.faidedtech.randomstuff.blocks.TitaniumBlock;
 import com.faidedtech.randomstuff.blocks.TitaniumOre;
 import com.faidedtech.randomstuff.blocks.TomatoCrop;
 import com.faidedtech.randomstuff.world.feature.BlueTree;
+import com.faidedtech.randomstuff.world.feature.CedarTree;
 import com.faidedtech.randomstuff.world.feature.OrangeTree;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -92,5 +93,7 @@ public class RegistryHandlerBlocks {
 	public static final RegistryObject<Block> BLUE_LOG = BLOCKS.register("blue_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
 	public static final RegistryObject<Block> BLUE_LEAVES = BLOCKS.register("blue_leaves", () -> new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)));
 	public static final RegistryObject<Block> BLUE_SAPLING = BLOCKS.register("blue_sapling", () -> new ModSaplingBlock(() -> new BlueTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
+
+	public static final RegistryObject<Block> CEDAR_SAPLING = BLOCKS.register("cedar_sapling", () -> new ModSaplingBlock(() -> new CedarTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
 
 }

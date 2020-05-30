@@ -21,7 +21,8 @@ public class ClientEventBusSubscriber {
 		RenderTypeLookup.setRenderLayer(RegistryHandlerBlocks.BLUE_CROP.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(RegistryHandlerBlocks.TOMATO_CROP.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(RegistryHandlerBlocks.ONION_CROP.get(), RenderType.getCutout());
-		
+		RenderTypeLookup.setRenderLayer(RegistryHandlerBlocks.CEDAR_SAPLING.get(), RenderType.getCutout());
+
 	}
 
 }
