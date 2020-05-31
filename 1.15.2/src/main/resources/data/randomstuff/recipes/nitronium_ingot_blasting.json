@@ -1,7 +1,7 @@
 {
     "type": "minecraft:blasting",
     "ingredient": {
-        "item": "randomstuff:nitronium_shard"
+        "item": "randomstuff:nitronium_crystal"
     },
     "result": "randomstuff:nitronium_ingot",
     "experience": 5.5,

@@ -43,7 +43,7 @@ import java.util.stream.Collectors;
 /**
  * Main class for the Random Stuff Mod for Minecraft v1.15.2
  * @author David Adams
- * @version 0.1b
+ * @version 0.2b
  *
  */
 
@@ -56,7 +56,7 @@ public class RandomStuff
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "randomstuff";
     public static final String NAME = "Random Stuff Mod";
-    public static final String VERSION = "0.2.0b";
+    public static final String VERSION = "0.2.1b";
     public static final ResourceLocation BLUE_DIM_TYPE = new ResourceLocation(MODID, "blue");
 
 

@@ -1,9 +1,9 @@
 {
     "type": "minecraft:smelting",
     "ingredient": {
-        "item": "randomstuff:nitronium_crystal"
+        "item": "randomstuff:titanium_ore"
     },
-    "result": "randomstuff:nitronium_ingot",
+    "result": "randomstuff:titanium_ingot",
     "experience": 6,
     "cookingtime": 200
 }
