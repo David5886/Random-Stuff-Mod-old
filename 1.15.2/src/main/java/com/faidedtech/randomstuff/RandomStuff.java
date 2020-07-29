@@ -56,7 +56,7 @@ public class RandomStuff
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "randomstuff";
     public static final String NAME = "Random Stuff Mod";
-    public static final String VERSION = "0.2.1b";
+    public static final String VERSION = "0.3.d";
     public static final ResourceLocation BLUE_DIM_TYPE = new ResourceLocation(MODID, "blue");
 
 
